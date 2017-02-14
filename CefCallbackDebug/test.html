@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+
+        function completed() {
+            widgetControl.setDurationComplete();
+        }
+        function successCallback(msg) {
+            console.log('test.success', msg);
+            completed();
+        }
+        function errorCallback(msg) {
+            console.log('test.error', msg);
+            completed();
+        }
+        function debugCallback(msg) {
+            console.log('test.debug', msg);
+        }
+
+        widgetControl.setDuration(60000);
+
+        widgetControl.test("input data", successCallback, errorCallback, debugCallback);
+
+    </script>
+</head>
+<body style="background-color: black; color: white;">
+    <p>TEST PAGE</p>
+    <p>Open http://localhost:8080/ in browser to debug</p>
+</body>
+</html>
