@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        var timeout;
+        function callback() {
+            console.log('success');
+            document.getElementById('status').innerText = 'CALLBACK';
+            clearTimeout(timeout);
+        }
+        function fail() {
+            console.log('failed');
+            document.getElementById('status').innerText = 'FAILED';
+        }
+        window.onload = function () {
+            widgetControl.test(callback);
+            timeout = setTimeout(fail, 18000);
+            console.log('test');
+            document.getElementById('status').innerText = 'LOAD';
+        }
+    </script>
+</head>
+<body style="background-color: black; color: white;">
+    <p>Open http://localhost:8080/ in browser to debug</p>
+    <p id="status">N/A</p>
+</body>
+</html>

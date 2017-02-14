@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefCallbackDebug", "CefCallbackDebug\CefCallbackDebug.csproj", "{E268B83D-7506-4CF9-861B-DB99206FBBB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefCallbackDebug.MinimalExample", "CefCallbackDebug.MinimalExample\CefCallbackDebug.MinimalExample.csproj", "{AA32E9CB-2A16-4128-AAEF-D3EDC97F4D3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{E268B83D-7506-4CF9-861B-DB99206FBBB9}.Debug|x86.Build.0 = Debug|x86
 		{E268B83D-7506-4CF9-861B-DB99206FBBB9}.Release|x86.ActiveCfg = Release|x86
 		{E268B83D-7506-4CF9-861B-DB99206FBBB9}.Release|x86.Build.0 = Release|x86
+		{AA32E9CB-2A16-4128-AAEF-D3EDC97F4D3A}.Debug|x86.ActiveCfg = Debug|x86
+		{AA32E9CB-2A16-4128-AAEF-D3EDC97F4D3A}.Debug|x86.Build.0 = Debug|x86
+		{AA32E9CB-2A16-4128-AAEF-D3EDC97F4D3A}.Release|x86.ActiveCfg = Release|x86
+		{AA32E9CB-2A16-4128-AAEF-D3EDC97F4D3A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
